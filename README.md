@@ -31,5 +31,5 @@ Para realizarlo, se nos provee de una base en código HTML y CSS. De esta manera
 
 ##### Herramienta
 
-Para el desarrollo del código usé Visual Studio Code v.1.97.0, y también realicé algunas consultas a ChatGPT 3.5
+Para el desarrollo del código usé Visual Studio Code v.1.97.0, y también realicé algunas consultas a ChatGPT 3.5.
 
