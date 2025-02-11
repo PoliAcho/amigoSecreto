@@ -21,6 +21,7 @@ function agregarAmigo() {
   listaAmigos.push(nombreAmigo);                  // Agrega el nombre a la lista
   console.log(listaAmigos);
   document.getElementById("amigo").value = "";
+  asignarTextoElemento('h1','Amigo Secreto');
   asignarTextoElemento('#amigo','Escribe un nombre')
   /*let listaAmigos=document.getElementById('listaAmigosLi');
   let item=document.createElement('li')
