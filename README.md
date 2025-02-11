@@ -11,13 +11,13 @@ Los nombres ingresados se mostrarán en una lista visible en la página, y al fi
 
 ##### Fucionalidades:
 
-- **Agregar nombres**: Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Adicionar".
+- **Agregar nombres**: Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Adicionar". También es posible "Adicionar" con solo presionar Enter.
 
 - **Validar entrada**: Si el campo de texto está vacío, el programa mostrará una alerta pidiendo un nombre válido.
 
 - **Visualizar la lista**: Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
 
-- **Sorteo aleatorio**: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
+- **Sorteo aleatorio**: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página. Si la lista está vacía se muestra otras leyendas.
 
 Para realizarlo, se nos provee de una base en código HTML y CSS. De esta manera solo debermos enfocarnos en aspectos fundamentales sobre lógica de programación como:
 
