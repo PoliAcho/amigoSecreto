@@ -8,20 +8,20 @@ let numeroSorteado=0;
 let nombreAmigo="";
 let amigoSecreto="";
 function agregarAmigo() {
-  let input = document.getElementById("amigo");   // Capturar el input
-  let nombreAmigo = input.value.trim();           // Eliminar espacios extras
+  let input = document.getElementById("amigo");        // Capturar el input
+  let nombreAmigo = input.value.trim();                // Eliminar espacios extras
   if (nombreAmigo === "") {
-      alert("Por favor, ingresa un nombre válido.");
-      return;
+    alert("Por favor, ingresa un nombre válido.");
+    return;
   }
   if (listaAmigos.includes(nombreAmigo)) {
-      alert("Este nombre ya está en la lista.");
-      return;
+    alert("Este nombre ya está en la lista.");
+    return;
   }
-  listaAmigos.push(nombreAmigo);                  // Agrega el nombre a la lista
+  listaAmigos.push(nombreAmigo);                       // Agrega el nombre a la lista
   document.getElementById("amigo").value = "";
-  asignarTextoElemento('h1','Amigo Secreto');
-  asignarTextoElemento('#amigo','Escribe un nombre')
+  asignarTextoElemento('h1','Amigo Secreto');          // Por si sorteó con lista vacia
+  asignarTextoElemento('h2','Escribe un nombre')       // Por si sorteó con lista vacia
   actualizarListaAmigos();
   input.value="";
   return;
@@ -35,7 +35,7 @@ function sortearAmigo(){
     asignarTextoElemento('h2','... es tu Amigo Secreto');
   }else{
     asignarTextoElemento('h1','¡Oh...! :(');
-    asignarTextoElemento('#amigo','... que pena ... ¿sin amigos? ¡inventa!')
+    asignarTextoElemento('h2','... que pena ... ¿sin amigos?  ¡INVÉNTALOS!')
   }
   return;
 }
@@ -55,8 +55,8 @@ function asignarTextoElemento(elemento, texto) {
 function actualizarListaAmigos() {
   let lista = document.getElementById("listaAmigos");
   if (!lista) {
-      console.warn("No se encontró el elemento con id 'listaAmigos'");
-      return;
+    console.warn("No se encontró el elemento con id 'listaAmigos'");
+    return;
   }
   lista.innerHTML = "";
   for (let i = 0; i < listaAmigos.length; i++) {
@@ -65,8 +65,8 @@ function actualizarListaAmigos() {
     lista.appendChild(item);
   }
   /*listaAmigos.forEach(amigo => {                   // Sugerencia de ChatGPT
-      let item = document.createElement("li");
-      item.textContent = amigo;
-      lista.appendChild(item);
+    let item = document.createElement("li");
+    item.textContent = amigo;
+    lista.appendChild(item);
   });*/
 }
